@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amit Barua | Portfolio</title>
+
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #3b82f6;
+      --light: #f8fafc;
+      --text: #1e293b;
+      --card: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #ddd;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      opacity: 0.85;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 1.5rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .skills span {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.3rem 0.7rem;
+      margin: 0.3rem;
+      border-radius: 15px;
+      font-size: 0.8rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .project, .experience {
+      padding: 0.8rem;
+      border-left: 3px solid var(--accent);
+      background: #f1f5f9;
+      border-radius: 6px;
+    }
+
+    .contact a {
+      display: block;
+      color: var(--accent);
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="profile-img">Photo</div>
+    <h1>Amit Barua</h1>
+    <p>Entrepreneur | IT, Interior Design & Catering Services</p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="card">
+        <p>
+          I am Amit Barua, a professional with over 22 years of experience across multiple industries.
+          I specialize in IT services including website, mobile app, and software development,
+          along with interior decoration for residential and commercial spaces, and food catering services.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card skills">
+        <span>Web Development</span>
+        <span>Mobile App Development</span>
+        <span>Software Solutions</span>
+        <span>Interior Design</span>
+        <span>Residential Projects</span>
+        <span>Commercial Projects</span>
+        <span>Catering Services</span>
+        <span>Business Management</span>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="grid grid-2">
+        <div class="experience">
+          <strong>IT Services</strong>
+          <p>Developing websites, mobile applications, and software solutions for clients across industries.</p>
+        </div>
+        <div class="experience">
+          <strong>Interior Decoration</strong>
+          <p>Designing and executing residential and commercial interior projects with a focus on quality and aesthetics.</p>
+        </div>
+        <div class="experience">
+          <strong>Food Catering</strong>
+          <p>Providing catering services for events, ensuring quality food and customer satisfaction.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid grid-2">
+        <div class="project">
+          <strong>Website Development Projects</strong>
+          <p>Placeholder for portfolio links</p>
+        </div>
+        <div class="project">
+          <strong>Interior Design Projects</strong>
+          <p>Placeholder for project images</p>
+        </div>
+        <div class="project">
+          <strong>Catering Events</strong>
+          <p>Placeholder for event highlights</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card contact">
+        <a href="tel:8910279586">📞 8910279586</a>
+        <a href="#">🌐 Website (add link)</a>
+        <a href="#">💼 LinkedIn (add link)</a>
+        <a href="#">📧 Email (add email)</a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2026 Amit Barua. All rights reserved.
+  </footer>
+
+</body>
+</html>
